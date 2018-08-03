@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:1.11.10
 
 MAINTAINER Himanshu Verma <himanshu@attabot.io>
 
