@@ -61,6 +61,7 @@ RUN chmod 0644 /etc/cron.d/faveo-cron
 
 RUN crontab /etc/cron.d/faveo-cron
 
-RUN sed -i "s/max_execution_time = .*/max_execution_time = 120/" /etc/php/7.1/fpm/php.ini
+RUN sed -i "s/max_execution_time = .*/max_execution_time = 300/" /etc/php/7.1/fpm/php.ini
+
 
 CMD cron && service php7.1-fpm start && nginx -g "daemon off;"
