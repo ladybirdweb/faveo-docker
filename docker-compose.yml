@@ -19,7 +19,7 @@ services:
      container_name: faveo
      depends_on:
        - mysql
-     image: faveo-docker2.0
+     image: ladybirdweb/faveo-docker:dev-temp
      ports:
        - "80:80"
      restart: always
